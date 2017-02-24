@@ -33,18 +33,18 @@ def SegNet():
 
     # Decoder
     d = UpSampling2D()(e)
-    d = BatchNormalization()(d)
     d = Convolution2D(32,k_size,k_size,border_mode='same')(d)
+    d = BatchNormalization()(d)
     d = Activation('relu')(d)
 
     d = UpSampling2D()(d)
-    d = BatchNormalization()(d)
     d = Convolution2D(32,k_size,k_size,border_mode='same')(d)
+    d = BatchNormalization()(d)
     d = Activation('relu')(d)
 
     d = UpSampling2D()(d)
-    d = BatchNormalization()(d)
     d = Convolution2D(32,k_size,k_size,border_mode='same')(d)
+    d = BatchNormalization()(d)
     d = Activation('relu')(d)
 
     out = Convolution2D(4,1,1)(d)
