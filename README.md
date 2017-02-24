@@ -1,6 +1,8 @@
 # Visual Segmentation Of Chromosomal Preparations
 In cytogenetics, experiments typically starts from chromosomal preparations fixed on glass slides. Occasionally a chromosome can fall on another one, yielding overlapping chromosomes in the image. Before computers and images processing with photography, chromosomes were cut from a paper picture and then classified (at least two paper pictures were required when chromosomes are overlapping). More recently, automatic segmentation methods were developped to overcome this problem. Most of the time these methods rely on a geometric analysis of the chromosome contour and require some human intervention when partial overlap occurs. Modern deep learning techniques have the potential to provide a more reliable, fully-automated solution.
 
+[AI-ON Project Description](ai-on.org/projects/visual-segmentation-of-chromosomal-preparations.html)
+
 ## Dataset
 - 13434 pairs of 94x93 images (grey+labels) stored in a numpy array saved in a hdf5 file.
 - The dataset and description is available from [Kaggle](https://www.kaggle.com/jeanpat/overlapping-chromosomes)
