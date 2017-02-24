@@ -1,7 +1,7 @@
 import numpy as np
 import h5py
 
-def generate_batch(batch_size=32):
+def batch_generator(batch_size=32):
     data = h5py.File('./data/LowRes_13434_overlapping_pairs.h5','r')
     data = data['dataset_1']
     
